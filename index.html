@@ -13,38 +13,47 @@
 
 <body>
     <div class="container">
-        <div class="login-form">
 
-            <!-- Logo -->
-            <div class="branding">
-                <img src="./images/favicon.png" alt="Sky Edge">
-                <h1 style="color:#2592D0">SkyEdge</h1>
-            </div>
+        <!-- Logo -->
+        <div class="branding">
+            <img src="./images/favicon.png" alt="Sky Edge" style="width: 7%; height: 7%">
+            <h1 style="color: #2592D0">SkyEdge</h1>
+        </div>
 
-            <!-- Login form -->
-            <div class="form-corner">
+        <!-- Login form -->
+        <div class="form-corner">
+
+            <div class="top-head">
                 <h1 style="color: #366882">Welcome back!</h1>
                 <p>Please enter your detail.</p>
+            </div>
 
-                <form>
-                    <label for="form-input">EMAIL</label>
-                    <input class="form-input" type="email" placeholder="Enter your email" required name="Email">
-                    <label for="form-input">PASSWORD</label>
-                    <input class="form-input" type="password" placeholder="Enter your password" required
-                        name="Password">
-                    <!-- <input type="checkbox" name="checkbox">
-                    <label for="checkbox">Keep me logged in</label> -->
-                    <!-- <a href="#forgot">Forgot password</a> -->
-                    <button class="btn-submit" type="submit" onclick="register">Login</button>
-                </form>
+            <div class="input-field">
+                <label for="form-input">Email:</label>
+                <input class="form-input" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-field">
+                <label for="form-input">Password:</label>
+                <input class="form-input" type="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">Keep me logged in</label>
+                </div>
+
+                <div class="right">
+                    <a href="#forgot">Forgot password</a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button class="btn-submit" type="submit" onclick="register">Login</button>
 
                 <p>Don't have an account? <a href="#register">Sign up</a></p>
             </div>
-        </div>
-
-        <!-- Background -->
-        <div class="bg">
-            <img src="./images/background.jpg" alt="Background">
         </div>
     </div>
 
