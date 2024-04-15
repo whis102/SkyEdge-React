@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.brand h1 {
+    color: #1976d2;
+}
+
+// .box {
+//     width: 50%;
+// }
+
+.box-input {
+    margin: 10px;
+}
+
+.brand {
+    display: flex;
+}
+
+.login-box {
+    display: block;
+}
