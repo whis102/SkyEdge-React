@@ -6,9 +6,39 @@ $brand-color: #1976d2;
     width: 100%;
 }
 
-.brand {
-    h1 {
-        color: $brand-color;
+.login {
+    display: flex;
+    width: 50%;
+
+    .login__brand {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            color: $brand-color;
+        }
+    }
+
+    .login__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .options {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .signup-option {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
     }
 }
 
@@ -16,11 +46,16 @@ $brand-color: #1976d2;
     margin: 10px;
 }
 
-.brand {
+.login__image {
     display: flex;
-}
+    justify-content: flex-end;
+    width: 50%;
+    align-items: center;
 
-.login-box {
-    display: flex;
-    flex-direction: column;
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+        object-fit: cover;
+    }
 }
