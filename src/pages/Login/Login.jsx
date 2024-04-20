@@ -7,22 +7,23 @@ import TextInput from "../../components/TextInput/TextInput";
 function Login() {
   return (
     <div className="container">
-      <div className="box box-input">
+      <div className="login-box">
         <div className="brand">
           <img src="./favicon.png" width={"50px"} />
           <h1>SkyEdge</h1>
         </div>
 
-        <div className="login-box">
-          <h1>Welcome back!</h1>
-          <p>Please enter your details</p>
 
+        <h1>Welcome back!</h1>
+        <p>Please enter your details</p>
+
+        <form action="">
           <TextInput
             id={"outlined-password-input"}
             label={"Email"}
             type={"text"}
           />
-          
+
           <TextInput
             id={"outlined-password-input"}
             label={"Password"}
@@ -30,13 +31,20 @@ function Login() {
             autoComplete={"current-password"}
           />
 
-          <Button variant="contained">Login</Button>
+          <div className="options">
+            <Checkbox defaultUnChecked size="small" />
+            <label>Keep me logged in</label>
+            <a href="/forgot-password" className="forgot-password">Forgot password</a>
+          </div>
 
-          <Checkbox defaultUnChecked size="small" />
-        </div>
+          <Button variant="contained">Login</Button>
+          <div className="signup-option">
+            Don't have an account? <a href="/signup">Sign up</a>
+          </div>
+        </form>
       </div>
 
-      <div className="box">
+      <div className="login-image">
         <img src="src/assets/background.jpg" alt="" />
       </div>
     </div>
