@@ -14,8 +14,11 @@ function Login() {
         </div>
 
         <div className="login__content">
-          <h1>Welcome back!</h1>
-          <p>Please enter your details</p>
+
+          <div className="login__title">
+            <h1>Welcome back!</h1>
+            <p>Please enter your details</p>
+          </div>
 
           <form action="">
             <TextInput

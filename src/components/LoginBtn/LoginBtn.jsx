@@ -4,7 +4,9 @@ import Button from "@mui/material/Button";
 
 function LoginBtn({ children }) {
     return (
-        <Button variant="contained" className='button'> {children}</Button>
+        <div className="btn-box">
+            <Button variant="contained" className='btn'> {children}</Button>
+        </div>
     )
 }
 
