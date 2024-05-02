@@ -1,5 +1,5 @@
-import React from "react";
-import TextField from "@mui/material/TextField";
+import React from "react"
+import TextField from "@mui/material/TextField"
 import './TextInput.scss'
 
 function TextInput({ id, label, type, autoComplete }) {
@@ -11,7 +11,7 @@ function TextInput({ id, label, type, autoComplete }) {
       autoComplete={autoComplete}
       fullWidth
     />
-  );
+  )
 }
 
-export default TextInput;
+export default TextInput
