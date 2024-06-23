@@ -14,7 +14,6 @@ function Login() {
         </div>
 
         <div className="login__content">
-
           <div className="login__title">
             <h1>Welcome back!</h1>
             <p>Please enter your details</p>
@@ -40,7 +39,9 @@ function Login() {
                 <label>Keep me logged in</label>
               </div>
 
-              <a href="/forgot-password" className="forgot-password">Forgot password</a>
+              <a href="/forgot-password" className="forgot-password">
+                Forgot password
+              </a>
             </div>
 
             <LoginBtn children={"Login"} />
@@ -52,7 +53,7 @@ function Login() {
       </div>
 
       <div className="login__image">
-        <img src="src/assets/background.png" alt="Login Background" />
+        <img src="assets/background.png" alt="Login Background" />
       </div>
     </div>
   );
