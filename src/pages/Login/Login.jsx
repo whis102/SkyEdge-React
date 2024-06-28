@@ -3,6 +3,7 @@ import "./Login.scss";
 import Checkbox from "@mui/material/Checkbox";
 import TextInput from "../../components/TextInput/TextInput";
 import LoginBtn from "../../components/LoginBtn/LoginBtn";
+import LoginBg from "../../assets/background.png";
 
 function Login() {
   return (
@@ -53,7 +54,7 @@ function Login() {
       </div>
 
       <div className="login__image">
-        <img src="assets/background.png" alt="Login Background" />
+        <img src={LoginBg} alt="Login Background" />
       </div>
     </div>
   );
