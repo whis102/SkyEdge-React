@@ -1,0 +1,13 @@
+.top-nav {
+  background-color: #212529;
+  display: flex;
+  justify-content: space-around;
+
+  .info {
+    display: flex;
+
+    .info__link {
+      margin: 10px;
+    }
+  }
+}

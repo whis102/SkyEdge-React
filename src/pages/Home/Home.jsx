@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
+import TopNav from "../../components/TopNav/TopNav";
+
+import { Container, AppBar } from "@mui/material";
 
 function Home() {
-    return (
-        <div>
-            Home
-        </div>
-    )
+  return (
+    <>
+      <AppBar
+        position="fixed"
+        sx={{
+          boxShadow: 0,
+          bgcolor: "transparent",
+          backgroundImage: "none",
+          mt: 2,
+        }}
+      >
+        <TopNav />
+        <Container maxWidth="lg"></Container>
+      </AppBar>
+    </>
+  );
 }
 
-export default Home
+export default Home;
